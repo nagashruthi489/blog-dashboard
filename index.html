@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <h1>Admin Dashboard</h1>
+      </header>
+      <main>
+        <!-- Form to Add Blog -->
+        <section class="form-section">
+          <h2>Add New Blog</h2>
+          <form id="blogForm">
+            <input type="text" id="title" placeholder="Blog Title" required />
+            <input type="text" id="category" placeholder="Category" required />
+            <input
+              type="text"
+              id="tags"
+              placeholder="Tags (comma-separated)"
+              required
+            />
+            <button type="submit">Add Blog</button>
+          </form>
+        </section>
+
+        <!-- Blog List Table -->
+        <section class="blog-list">
+          <h2>Blogs</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Tags</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="blogTableBody">
+              <!-- Dynamic Content -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
